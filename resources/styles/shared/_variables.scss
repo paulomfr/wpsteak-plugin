@@ -1,3 +1,43 @@
 /**
  * Any shared variables between front-end, editor, admin and login bundles.
  */
+
+/**
+ * Default Bootstrap variables.
+ */
+@import "~bootstrap/scss/variables";
+
+/*
+ * Colors set
+*/
+@import "./config/colors";
+
+/*
+ * Spacers set
+*/
+@import "./config/spacers";
+
+/*
+ * Grid System set
+*/
+@import "./config/grid";
+
+/*
+ * Typography set
+*/
+@import "./config/typography";
+
+/*
+ * Buttons set
+*/
+@import "./config/buttons";
+
+/*
+ * Borders set
+*/
+@import "./config/borders";
+
+/*
+ * Transitions set
+*/
+@import "./config/transitions";

@@ -1,0 +1,27 @@
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $font-family-base;
+  margin-bottom: $headings-margin-bottom;
+  text-transform: none;
+}
+
+h1, .h1, .text-huge {
+  @include font-size($h1-font-size);
+  line-height: (31 / $font-size-base-value) * 1rem;
+}
+
+
+h2, .h2, .text-large {
+  @include font-size($h2-font-size);
+  line-height: (22 / $font-size-base-value) * 1rem;
+}
+
+h3, .h3, .text-medium { @include font-size($h3-font-size); }
+h4, .h4 { @include font-size($h4-font-size); }
+h5, .h5 { @include font-size($h5-font-size); }
+h6, .h6 { @include font-size($h6-font-size); }

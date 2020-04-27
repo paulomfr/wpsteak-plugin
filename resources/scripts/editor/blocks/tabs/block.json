@@ -1,0 +1,9 @@
+{
+	"name": "lab/tabs",
+	"category": "layout",
+	"attributes": {
+		"align": {
+			"type": "string"
+		}
+	}
+}

@@ -22,5 +22,6 @@ return [
 		App\Providers\ExampleCategory\Taxonomy::class,
 		App\Providers\Example\PostMeta::class,
 		App\Providers\Example\PostType::class,
+		App\Providers\ThemeSupports::class
 	],
 ];

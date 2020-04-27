@@ -1,0 +1,12 @@
+{
+	"name": "lab/example",
+	"category": "common",
+	"attributes": {
+		"align": {
+			"type": "string"
+		},
+		"placeholder": {
+			"type": "string"
+		}
+	}
+}

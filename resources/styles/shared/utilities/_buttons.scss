@@ -1,0 +1,75 @@
+.btn {
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  color: $body-color;
+  cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+  display: inline-block;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  white-space: $btn-white-space;
+  @include transition($btn-transition);
+
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+.btn-secondary {
+  background-color: var(--secondary, color('secondary'));
+  color: var(--white, color('white'));
+  transition: .3 ease-in-out;
+
+  &:hover {
+    background-color: lighten(color('secondary'), .15);
+  }
+}
+
+.btn-link {
+  color: $link-color;
+  font-weight: $font-weight-normal;
+  text-decoration: $link-decoration;
+
+  @include hover() {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: none;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+}

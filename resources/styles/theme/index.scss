@@ -9,7 +9,13 @@
 \* ------------------------------------------------------------ */
 
 @import '~@styles/shared/_config.scss';
+@import '~@styles/shared/_functions.scss';
 @import '~@styles/shared/_variables.scss';
+@import '~@styles/shared/_root.scss';
+@import '~@styles/shared/_placeholders.scss';
+@import '~@styles/shared/_mixins.scss';
+@import '~@styles/shared/utilities/index.scss';
+@import '~@styles/shared/grid.scss';
 @import './_variables.scss';
 @import './_sprite.scss';
 

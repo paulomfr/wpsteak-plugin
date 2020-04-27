@@ -1,0 +1,18 @@
+%abs-align-center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%abs-align-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
